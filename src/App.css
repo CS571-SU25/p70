@@ -1,42 +1,204 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+/* Base Styles */
+html, body, #root {
+  width: 100%;
+  min-width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+/* Color Variables */
+:root {
+  --steam-dark: #171a21;
+  --steam-blue: #1b2838;
+  --steam-accent: #66c0f4;
+  --steam-light: #c7d5e0;
+  --steam-green: #5ba32b;
+  --steam-gold: #e4ae39;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
+/* Global Styles */
+body {
+  font-family: 'Segoe UI', 'Roboto', sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Steam-Themed Components */
+.steam-btn {
+  background-color: var(--steam-blue);
+  border-color: var(--steam-accent);
+  color: white;
+  transition: all 0.3s ease;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+.steam-btn:hover {
+  background-color: var(--steam-accent);
+  color: var(--steam-dark);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.steam-card {
+  border: none;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background: linear-gradient(145deg, #ffffff, #f0f0f0);
+}
+
+.steam-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Navbar Styles */
+.navbar-steam {
+  background-color: var(--steam-dark) !important;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  padding: 0.8rem 1rem;
+}
+
+.navbar-brand {
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: var(--steam-accent) !important;
+}
+
+/* Inventory Item Styles */
+.inventory-item {
+  transition: all 0.2s ease;
+  border-left: 3px solid transparent;
+}
+
+.inventory-item:hover {
+  background-color: rgba(102, 192, 244, 0.1);
+  border-left: 3px solid var(--steam-accent);
+  cursor: pointer;
+}
+
+/* Quality Badges */
+.badge-unusual {
+  background-color: var(--steam-gold);
+  color: #000;
+}
+
+.badge-strange {
+  background-color: #cf6a32;
+}
+
+.badge-vintage {
+  background-color: #476291;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.fade-in {
+  animation: fadeIn 0.5s ease-in;
+}
+
+/* Loading Spinner */
+.steam-spinner {
+  color: var(--steam-accent);
+  width: 3rem;
+  height: 3rem;
+  border-width: 0.25em;
+}
+
+/* Responsive Grid */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--steam-blue);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--steam-accent);
+}
+
+/* Tooltip Styles */
+.tooltip-inner {
+  background-color: var(--steam-dark);
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+}
+
+.bs-tooltip-auto[data-popper-placement^=top] .tooltip-arrow::before,
+.bs-tooltip-top .tooltip-arrow::before {
+  border-top-color: var(--steam-dark);
+}
+
+/* Profile Header */
+.profile-header {
+  background: linear-gradient(135deg, var(--steam-dark), var(--steam-blue));
+  color: white;
+  padding: 2rem 0;
+  margin-bottom: 2rem;
+}
+
+/* Responsive Typography */
+@media (min-width: 768px) {
+  .display-4 {
+    font-size: 3.5rem;
   }
-  to {
-    transform: rotate(360deg);
+  
+  .lead {
+    font-size: 1.5rem;
   }
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+/* Steam Login Button */
+.btn-steam-login {
+  background-color: #171a21;
+  color: white;
+  border: 1px solid #66c0f4;
 }
 
-.card {
-  padding: 2em;
+.btn-steam-login:hover {
+  background-color: #66c0f4;
+  color: #171a21;
 }
 
-.read-the-docs {
-  color: #888;
+/* Pagination */
+.pagination .page-item.active .page-link {
+  background-color: var(--steam-blue);
+  border-color: var(--steam-accent);
+}
+
+/* Footer Styles */
+.footer-steam {
+  background-color: var(--steam-dark);
+  color: var(--steam-light);
+  padding: 1.5rem 0;
+}
+
+.footer-link {
+  color: var(--steam-accent);
+  transition: color 0.2s ease;
+}
+
+.footer-link:hover {
+  color: white;
+  text-decoration: none;
 }
