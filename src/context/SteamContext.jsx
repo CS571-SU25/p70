@@ -1,9 +1,7 @@
 import { createContext, useContext, useState, useEffect } from 'react';
 
-// 1. Create the context
 export const SteamContext = createContext();
 
-// 2. Create and export the provider component
 export const SteamProvider = ({ children }) => {
   const [steamId, setSteamId] = useState(null);
   const [userProfile, setUserProfile] = useState(null);
@@ -11,7 +9,7 @@ export const SteamProvider = ({ children }) => {
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState(null);
 
-  // Configuration - change these as needed
+
   const MONSOON_STEAM_ID = '76561198028175941'; // Your SteamID64
   const STEAM_API_KEY = import.meta.env.VITE_STEAM_API_KEY || 'YOUR_API_KEY'; // Using Vite environment variable
   const APP_ID = 440; // Team Fortress 2 app ID
@@ -132,7 +130,6 @@ export const SteamProvider = ({ children }) => {
   );
 };
 
-// 3. Create and export the custom hook
 export const useSteam = () => {
   const context = useContext(SteamContext);
   if (!context) {

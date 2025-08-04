@@ -1,4 +1,4 @@
-/* Steam-themed colors */
+
 .profile-container {
   background-color: #1b2838;
   color: #e5e5e5;
@@ -24,7 +24,6 @@
   border-color: #5c7e10 !important;
 }
 
-/* Text colors */
 .text-steam-light {
   color: #c7d5e0 !important;
 }
@@ -45,7 +44,6 @@
   color: #3a94c4 !important;
 }
 
-/* Progress bars */
 .steam-progress .progress-bar {
   background-color: #5c7e10;
 }
@@ -54,7 +52,6 @@
   background-color: #3a4a5e;
 }
 
-/* Tabs */
 .steam-tabs .nav-link {
   color: #c7d5e0;
   background-color: #2a3a4e;
@@ -72,7 +69,6 @@
   border-color: #5c7e10;
 }
 
-/* Cards */
 .card-header {
   border-bottom: 1px solid #5c7e10;
 }
@@ -83,7 +79,6 @@
   color: white !important;
 }
 
-/* Alerts */
 .alert-warning {
   background-color: #4a3a20;
   border-color: #5c4a30;

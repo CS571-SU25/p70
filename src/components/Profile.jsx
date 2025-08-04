@@ -13,7 +13,7 @@ const Profile = () => {
     steamid: '76561198028175941',
     personaname: 'SteamMaster',
     avatarfull: 'https://placehold.co/150x150/1b2838/c7d5e0?text=SM',
-    realname: 'John Johnson',
+    realname: 'Johnny Johnson Johnathan',
     timecreated: 1262275200, 
     lastlogoff: Date.now() / 1000 - 3600, 
     communityvisibilitystate: 3,
@@ -61,7 +61,6 @@ const Profile = () => {
   });
 
   useEffect(() => {
-    // Simulate loading
     if (steamId) {
       setLoading(true);
       const timer = setTimeout(() => setLoading(false), 800);

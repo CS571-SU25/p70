@@ -1,4 +1,4 @@
-/* Image container styling */
+
 .ratio.ratio-1x1 {
   background-color: #2a3a4e;
   border-radius: 4px 4px 0 0;
@@ -10,7 +10,6 @@
   background-color: #1b2838;
 }
 
-/* Better placeholder styling */
 .inventory-card .ratio img[src*="placeholder.com"] {
   background-color: #2a3a4e;
   display: flex;

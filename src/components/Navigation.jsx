@@ -13,7 +13,6 @@ import { GiTrade } from 'react-icons/gi';
 import { useState } from 'react';
 
 const Navigation = () => {
-  // Mock data
   const [notifications, setNotifications] = useState([
     {
       id: 1,
@@ -186,9 +185,8 @@ const Navigation = () => {
               <NavDropdown.Divider />
               <NavDropdown.Item as={Link} to="/settings">Settings</NavDropdown.Item>
               <NavDropdown.Item as={Link} to="/logout" onClick={(e) => {
-  // Prevent default navigation if you want to handle logout differently
-  // e.preventDefault();
-  // handleLogout(); // You could add this if you want instant logout
+  e.preventDefault();
+  handleLogout();
 }}>
   Logout
 </NavDropdown.Item>
