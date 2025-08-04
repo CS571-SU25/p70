@@ -1,0 +1,164 @@
+.trade-offers-container {
+  background-color: #1b2838;
+  color: #ffffff; 
+  min-height: 100vh;
+}
+
+.steam-tabs .nav-link {
+  color: #e5e5e5; 
+  background-color: #2a3a4e;
+  border-color: #3a4a5e;
+  font-weight: 500; 
+}
+
+.steam-tabs .nav-link.active {
+  color: #ffffff;
+  background-color: #1b2838;
+  border-color: #5c7e10 #5c7e10 #1b2838;
+  font-weight: 600; 
+}
+
+.trade-card {
+  background-color: #2a3a4e;
+  border-color: #3a4a5e;
+  color: #ffffff; 
+}
+
+.trade-avatar {
+  width: 80px;
+  height: 80px;
+  border: 2px solid #5c7e10;
+}
+
+.trade-avatar-sm {
+  width: 50px;
+  height: 50px;
+  border: 2px solid #5c7e10;
+}
+
+.trade-item-icon {
+  width: 60px;
+  height: 60px;
+  border: 1px solid #3a4a5e;
+  transition: transform 0.2s;
+  background-color: #1b2838; 
+}
+
+.trade-item-icon:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 10px rgba(92, 126, 16, 0.5);
+  background-color: #2a3a4e;
+}
+
+.trade-item-icon-sm {
+  width: 40px;
+  height: 40px;
+  border: 1px solid #3a4a5e;
+  background-color: #1b2838;
+}
+
+.text-steam-accent {
+  color: #66c0f4;
+  font-weight: 500; 
+}
+
+.btn-steam-accept {
+  background-color: #5c7e10;
+  color: white;
+  font-weight: 500; 
+}
+
+.btn-steam-accept:hover {
+  background-color: #4a6a0d;
+  color: white;
+}
+
+.past-trade-item {
+  background-color: #2a3a4e;
+  border-color: #3a4a5e;
+  color: #ffffff; 
+}
+
+.past-trade-item:hover {
+  background-color: #3a4a5e;
+}
+
+.current-trades-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+  gap: 1rem;
+}
+
+.text-muted {
+  color: #8f98a0 !important;
+}
+
+.fw-bold {
+  color: #ffffff; 
+}
+
+.small {
+  color: #c7d5e0; 
+}
+
+.card-title, .card-text, h1, h2, h3, h4, h5, h6 {
+  color: #ffffff !important; 
+}
+
+.alert-info {
+  color: #e5e5e5; 
+  background-color: #2a3a4e;
+  border-color: #3a4a5e;
+}
+
+.text-success {
+  color: #5c7e10 !important; 
+}
+
+.text-danger {
+  color: #e74c3c !important; 
+}
+
+@media (max-width: 768px) {
+  .current-trades-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .trade-avatar {
+    width: 60px;
+    height: 60px;
+  }
+
+  body {
+    font-size: 16px;
+  }
+  
+  .btn {
+    padding: 0.5rem 1rem; 
+    font-size: 1rem;
+  }
+}
+
+.trade-card .text-muted {
+  color: #a7b5c0 !important; 
+}
+
+.list-group-item {
+  color: #ffffff; 
+}
+
+a {
+  color: #66c0f4;
+}
+
+a:hover {
+  color: #3a94c4;
+}
+
+.progress {
+  background-color: #2a3a4e;
+}
+
+.progress-bar {
+  background-color: #5c7e10;
+}

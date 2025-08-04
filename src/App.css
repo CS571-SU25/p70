@@ -1,4 +1,4 @@
-/* Base Styles */
+
 html, body, #root {
   width: 100%;
   min-width: 100%;
@@ -7,7 +7,6 @@ html, body, #root {
   scroll-behavior: smooth;
 }
 
-/* Color Variables */
 :root {
   --steam-dark: #171a21;
   --steam-blue: #1b2838;
@@ -17,7 +16,6 @@ html, body, #root {
   --steam-gold: #e4ae39;
 }
 
-/* Global Styles */
 body {
   font-family: 'Segoe UI', 'Roboto', sans-serif;
   background-color: #f5f5f5;
@@ -25,7 +23,6 @@ body {
   line-height: 1.6;
 }
 
-/* Steam-Themed Components */
 .steam-btn {
   background-color: var(--steam-blue);
   border-color: var(--steam-accent);
@@ -55,7 +52,6 @@ body {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
 
-/* Navbar Styles */
 .navbar-steam {
   background-color: var(--steam-dark) !important;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
@@ -68,7 +64,6 @@ body {
   color: var(--steam-accent) !important;
 }
 
-/* Inventory Item Styles */
 .inventory-item {
   transition: all 0.2s ease;
   border-left: 3px solid transparent;
@@ -80,7 +75,6 @@ body {
   cursor: pointer;
 }
 
-/* Quality Badges */
 .badge-unusual {
   background-color: var(--steam-gold);
   color: #000;
@@ -94,7 +88,11 @@ body {
   background-color: #476291;
 }
 
-/* Animations */
+body {
+  background-color: #171a21;
+  color: #c7d5e0;
+}
+
 @keyframes fadeIn {
   from { opacity: 0; }
   to { opacity: 1; }
@@ -104,7 +102,6 @@ body {
   animation: fadeIn 0.5s ease-in;
 }
 
-/* Loading Spinner */
 .steam-spinner {
   color: var(--steam-accent);
   width: 3rem;
@@ -112,14 +109,12 @@ body {
   border-width: 0.25em;
 }
 
-/* Responsive Grid */
 .grid-container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   gap: 1.5rem;
 }
 
-/* Custom Scrollbar */
 ::-webkit-scrollbar {
   width: 8px;
 }
@@ -137,7 +132,6 @@ body {
   background: var(--steam-accent);
 }
 
-/* Tooltip Styles */
 .tooltip-inner {
   background-color: var(--steam-dark);
   padding: 0.5rem 1rem;
@@ -149,7 +143,6 @@ body {
   border-top-color: var(--steam-dark);
 }
 
-/* Profile Header */
 .profile-header {
   background: linear-gradient(135deg, var(--steam-dark), var(--steam-blue));
   color: white;
@@ -157,7 +150,6 @@ body {
   margin-bottom: 2rem;
 }
 
-/* Responsive Typography */
 @media (min-width: 768px) {
   .display-4 {
     font-size: 3.5rem;
@@ -168,7 +160,6 @@ body {
   }
 }
 
-/* Steam Login Button */
 .btn-steam-login {
   background-color: #171a21;
   color: white;
@@ -180,13 +171,11 @@ body {
   color: #171a21;
 }
 
-/* Pagination */
 .pagination .page-item.active .page-link {
   background-color: var(--steam-blue);
   border-color: var(--steam-accent);
 }
 
-/* Footer Styles */
 .footer-steam {
   background-color: var(--steam-dark);
   color: var(--steam-light);

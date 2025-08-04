@@ -1,0 +1,65 @@
+
+.logout-container {
+  min-height: 100vh;
+  background-color: #1b2838;
+  color: #e5e5e5;
+}
+
+.custom-card {
+  background-color: #2a3a4e;
+  border-color: #3a4a5e;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.steam-icon {
+  color: #66c0f4;
+}
+
+.main-title {
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.logout-btn {
+  background-color: #e74c3c;
+  border-color: #c0392b;
+  font-weight: 500;
+}
+
+.logout-btn:hover {
+  background-color: #c0392b;
+  border-color: #a5281b;
+}
+
+.cancel-btn {
+  color: #c7d5e0;
+  border-color: #c7d5e0;
+}
+
+.cancel-btn:hover {
+  color: #ffffff;
+  border-color: #ffffff;
+}
+
+.home-btn {
+  background-color: #5c7e10;
+  border-color: #4a6a0d;
+  font-weight: 500;
+}
+
+.home-btn:hover {
+  background-color: #4a6a0d;
+  border-color: #385609;
+}
+
+.security-notice {
+  color: #c7d5e0;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 576px) {
+  .custom-card {
+    padding: 1.5rem;
+  }
+}

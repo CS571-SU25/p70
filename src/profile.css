@@ -1,0 +1,97 @@
+/* Steam-themed colors */
+.profile-container {
+  background-color: #1b2838;
+  color: #e5e5e5;
+}
+
+.bg-steam-card {
+  background-color: #2a3a4e;
+  border-color: #3a4a5e;
+  color: #e5e5e5;
+}
+
+.bg-steam-item {
+  background-color: #3a4a5e;
+  border-color: #4a5a6e;
+}
+
+.bg-steam-dark {
+  background-color: #171a21;
+  color: #ffffff;
+}
+
+.border-steam {
+  border-color: #5c7e10 !important;
+}
+
+/* Text colors */
+.text-steam-light {
+  color: #c7d5e0 !important;
+}
+
+.text-steam-lighter {
+  color: #e5e5e5 !important;
+}
+
+.text-steam-accent {
+  color: #66c0f4 !important;
+}
+
+.text-steam-link {
+  color: #66c0f4 !important;
+}
+
+.text-steam-link:hover {
+  color: #3a94c4 !important;
+}
+
+/* Progress bars */
+.steam-progress .progress-bar {
+  background-color: #5c7e10;
+}
+
+.steam-progress {
+  background-color: #3a4a5e;
+}
+
+/* Tabs */
+.steam-tabs .nav-link {
+  color: #c7d5e0;
+  background-color: #2a3a4e;
+  border-color: #3a4a5e;
+}
+
+.steam-tabs .nav-link.active {
+  color: #ffffff;
+  background-color: #1b2838;
+  border-color: #5c7e10 #5c7e10 #1b2838;
+}
+
+.steam-tabs .nav-link:hover {
+  color: #ffffff;
+  border-color: #5c7e10;
+}
+
+/* Cards */
+.card-header {
+  border-bottom: 1px solid #5c7e10;
+}
+
+/* Badges */
+.badge.bg-success {
+  background-color: #2e7d32 !important;
+  color: white !important;
+}
+
+/* Alerts */
+.alert-warning {
+  background-color: #4a3a20;
+  border-color: #5c4a30;
+  color: #f0d0a0;
+}
+
+.alert-danger {
+  background-color: #4a2020;
+  border-color: #5c3030;
+  color: #f0a0a0;
+}

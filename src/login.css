@@ -1,0 +1,58 @@
+
+.login-page {
+  background-color: #171a21; 
+  min-height: 100vh;
+  color: #c7d5e0; 
+}
+
+.login-card {
+  background-color: #1b2838 !important; 
+  border: 1px solid #2a3a4e !important;
+  color: #c7d5e0 !important;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.login-card .text-light {
+  color: #ffffff !important;
+}
+
+.login-card .text-muted {
+  color: #8f98a0 !important; 
+}
+
+.steam-icon {
+  color: #5c7e10; 
+}
+
+.btn-steam {
+  background-color: #5c7e10;
+  border-color: #5c7e10;
+  color: white !important;
+}
+
+.btn-steam:hover {
+  background-color: #6c8c20;
+  border-color: #6c8c20;
+}
+
+.alert {
+  color: #c7d5e0 !important;
+}
+
+.alert-danger {
+  background-color: rgba(220, 53, 69, 0.2) !important;
+  border-color: #dc3545 !important;
+}
+
+.alert-success {
+  background-color: rgba(25, 135, 84, 0.2) !important;
+  border-color: #198754 !important;
+}
+
+.progress {
+  background-color: #2a3a4e !important;
+}
+
+.progress-bar {
+  background-color: #5c7e10 !important;
+}

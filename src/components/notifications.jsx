@@ -1,5 +1,6 @@
 import { Navbar, Nav, Container, NavDropdown, Badge, Dropdown, OverlayTrigger, Popover } from 'react-bootstrap';
 import { Link } from 'react-router';
+import '../notifications.css';
 import { 
   BsBellFill, 
   BsCollectionFill, 
@@ -135,8 +136,8 @@ const Navigation = () => {
             <Nav.Link as={Link} to="/profile">Profile</Nav.Link>
             
             <NavDropdown title="Tools" id="tools-dropdown" className="text-light">
-              <NavDropdown.Item as={Link} to="/trade-offers">
-                <GiTrade className="me-2" /> Trade Offers
+              <NavDropdown.Item as={Link} to="/trade-history">
+                <GiTrade className="me-2" /> Trade History
               </NavDropdown.Item>
               <NavDropdown.Item as={Link} to="/market-trends">
                 <BsGraphUp className="me-2" /> Market Trends
@@ -185,13 +186,7 @@ const Navigation = () => {
               </NavDropdown.Item>
               <NavDropdown.Divider />
               <NavDropdown.Item as={Link} to="/settings">Settings</NavDropdown.Item>
-              <NavDropdown.Item as={Link} to="/logout" onClick={(e) => {
-  // Prevent default navigation if you want to handle logout differently
-  // e.preventDefault();
-  // handleLogout(); // You could add this if you want instant logout
-}}>
-  Logout
-</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="/logout">Logout</NavDropdown.Item>
             </NavDropdown>
           </Nav>
         </Navbar.Collapse>
